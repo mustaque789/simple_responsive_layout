@@ -1,0 +1,158 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resetting margins for specific elements */
+main,
+header,
+section,
+aside,
+footer {
+    margin: 0;
+}
+
+/* Styles for the main container */
+.main {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    
+}
+
+/* Styles for the header section */
+.header {
+    display: flex;
+    flex-direction: row;
+    background: #03a9f4;
+    border: 1px solid #000000;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Styles for the hero section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 20vh;
+    background: #d22b1f;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+/* Styles for the wrapper container */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+/* Styles for the content section */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 65%;
+    background: #129a22;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Styles for the sidebar section */
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 35%;
+    border: 1px solid #000000;
+    background: #673ab7;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Styles for the footer section */
+.footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    border: 1px solid #000000;
+    background: #616161;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* CSS for mobile view */
+@media screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .hero,
+    .wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .content,
+    .sidebar {
+        flex-basis: 100%;
+        height: auto;
+    }
+}
+
+/*CSS for tablet view */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero,
+    .wrapper,
+    .content,
+    .sidebar,
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* CSS for Desktop view */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    main {
+        background: #000000;
+        height: auto;
+        width: 100%
+    }
+}
+
+/* CSS for Ultra Big Desktop view / Big LCD/ LED Tv's */
+@media screen and (min-width: 1025px){
+    main {
+        background: #000000;
+        height: auto;
+        width: 100%
+    }
+}
